@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.5.21"
-    id("org.jetbrains.compose") version "0.5.0-build270"
+    id("org.jetbrains.compose") version ("1.0.0-alpha1")
 }
 
 group = "org.example"
@@ -19,6 +19,9 @@ kotlin {
     }
     sourceSets {
         val jsMain by getting {
+            kotlin.srcDir("src/main/kotlin")
+            resources.srcDir("src/main/resources")
+
             dependencies {
                 implementation(compose.web.core)
                 implementation(compose.runtime)
