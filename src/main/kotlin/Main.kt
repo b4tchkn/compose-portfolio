@@ -1,6 +1,5 @@
 import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.dom.Br
-import org.jetbrains.compose.web.dom.Hr
 import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Span
 import org.jetbrains.compose.web.dom.Text

@@ -9,9 +9,6 @@ import org.jetbrains.compose.web.css.display
 import org.jetbrains.compose.web.css.flexDirection
 import org.jetbrains.compose.web.css.height
 import org.jetbrains.compose.web.css.justifyContent
-import org.jetbrains.compose.web.css.keywords.auto
-import org.jetbrains.compose.web.css.minHeight
-import org.jetbrains.compose.web.css.minWidth
 import org.jetbrains.compose.web.css.position
 import org.jetbrains.compose.web.css.selectors.id
 import org.jetbrains.compose.web.css.vh
@@ -24,10 +21,8 @@ object AppStyleSheet : StyleSheet() {
         justifyContent(JustifyContent.Center)
         flexDirection(FlexDirection.Column)
         alignItems(AlignItems.Center)
-        minHeight(100.vh)
-        minWidth(100.vw)
-        height(auto)
-        width(auto)
+        width(100.vw)
+        height(100.vh)
     }
 
     init {
