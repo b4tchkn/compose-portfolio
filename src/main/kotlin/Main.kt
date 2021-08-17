@@ -1,33 +1,19 @@
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
-import org.jetbrains.compose.web.css.padding
-import org.jetbrains.compose.web.css.px
-import org.jetbrains.compose.web.dom.Button
-import org.jetbrains.compose.web.dom.Div
+import org.jetbrains.compose.web.css.Style
+import org.jetbrains.compose.web.dom.Br
+import org.jetbrains.compose.web.dom.Hr
+import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Span
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.renderComposable
 
 fun main() {
-    var count: Int by mutableStateOf(0)
-
     renderComposable(rootElementId = "root") {
-        Div({ style { padding(25.px) } }) {
-            Button(attrs = {
-                onClick { count -= 1 }
-            }) {
-                Text("-")
-            }
-
-            Span({ style { padding(15.px) } }) {
-                Text("$count")
-            }
-
-            Button(attrs = {
-                onClick { count += 1 }
-            }) {
-                Text("+")
+        Style(AppStyleSheet)
+        Span({ classes(AppStyleSheet.centerContainer) }) {
+            P {
+                Text("Full Your Name")
+                Br()
+                Text("Description....")
             }
         }
     }
