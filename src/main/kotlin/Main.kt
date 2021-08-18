@@ -32,7 +32,7 @@ fun main() {
                 }
                 classes(medium)
             }) {
-                Text("Mobile App Developer Android, Flutter")
+                Text("Mobile App Developer - Android, Flutter")
             }
             Div(attrs = {
                 style {
