@@ -1,11 +1,12 @@
-import AppStyleSheet.footer
-import TextStyleSheet.large
-import TextStyleSheet.medium
+import style.AppStyleSheet.footer
+import style.TextStyleSheet.large
+import style.TextStyleSheet.medium
 import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Footer
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.renderComposable
+import style.AppStyleSheet
 
 fun main() {
     renderComposable(rootElementId = "root") {

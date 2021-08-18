@@ -1,3 +1,5 @@
+package style
+
 import org.jetbrains.compose.web.css.StyleSheet
 import org.jetbrains.compose.web.css.fontSize
 import org.jetbrains.compose.web.css.fontWeight
