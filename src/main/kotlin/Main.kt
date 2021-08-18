@@ -39,12 +39,12 @@ fun main() {
                     marginTop(8.px)
                 }
             }) {
-                SocialIconButton()
-                SocialIconButton()
-                SocialIconButton()
-                SocialIconButton()
-                SocialIconButton()
-                SocialIconButton()
+                SocialIconButton() // GitHub
+                SocialIconButton() // Twitter
+                SocialIconButton() // Facebook
+                SocialIconButton() // Qiita
+                SocialIconButton() // Speaker Deck
+                SocialIconButton() // Mail
             }
         }
         Footer(attrs = { classes(footer, caption) }) {
