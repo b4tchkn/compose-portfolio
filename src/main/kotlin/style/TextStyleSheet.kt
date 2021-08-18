@@ -30,4 +30,11 @@ object TextStyleSheet : StyleSheet(AppStyleSheet) {
             "Lato, Noto Sans JP, system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif",
         )
     }
+    val caption by style {
+        fontSize(12.px)
+        property(
+            "font-family",
+            "-apple-system,Noto Sans JP, system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif",
+        )
+    }
 }
