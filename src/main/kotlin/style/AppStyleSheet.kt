@@ -16,9 +16,9 @@ import org.jetbrains.compose.web.css.display
 import org.jetbrains.compose.web.css.flexDirection
 import org.jetbrains.compose.web.css.height
 import org.jetbrains.compose.web.css.justifyContent
-import org.jetbrains.compose.web.css.marginBottom
 import org.jetbrains.compose.web.css.marginLeft
 import org.jetbrains.compose.web.css.marginRight
+import org.jetbrains.compose.web.css.maxHeight
 import org.jetbrains.compose.web.css.maxWidth
 import org.jetbrains.compose.web.css.media
 import org.jetbrains.compose.web.css.mediaMaxWidth
@@ -55,9 +55,9 @@ object AppStyleSheet : StyleSheet() {
     }
 
     val icon by style {
-        maxWidth(160.px)
+        maxWidth(120.px)
+        maxHeight(120.px)
         borderRadius(50.pc)
-        marginBottom(16.px)
     }
 
     val socialIconButton by style {
