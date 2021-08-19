@@ -24,7 +24,6 @@ object TextStyleSheet : StyleSheet(AppStyleSheet) {
     }
     val textSmall by style {
         fontSize(16.px)
-        fontWeight(800)
         property(
             "font-family",
             "Lato, Noto Sans JP, system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif",

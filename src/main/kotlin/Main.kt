@@ -53,17 +53,34 @@ fun main() {
                 Divider(720.px)
             }
             ButtonsSection()
-            A(
+            Div(
                 attrs = {
-                    classes(bounceButton, bounceButtonSpan, textSmall)
-                },
-                href = "https://github.com/b4tchkn",
+                    style {
+                        marginTop(32.px)
+                    }
+                }
             ) {
-                Text("Contact me")
+                ContactmeButton()
             }
         }
         Footer(attrs = { classes(footer, caption) }) {
             Text("© 2021 · Powered by Jetpack Compose")
+        }
+    }
+}
+
+@Composable
+private fun ContactmeButton() {
+    A(
+        attrs = {
+            classes(bounceButton, bounceButtonSpan)
+        },
+        href = "mailto:baaaakkrad@gmail.com",
+    ) {
+        Div(attrs = {
+            classes(textSmall)
+        }) {
+            Text("Contact me")
         }
     }
 }
