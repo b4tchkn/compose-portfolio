@@ -96,8 +96,8 @@ object AppStyleSheet : StyleSheet() {
         display(DisplayStyle.Flex)
         justifyContent(JustifyContent.Center)
         alignItems(AlignItems.Center)
-        height(50.px)
-        width(500.px)
+        height(44.px)
+        width(240.px)
         boxSizing("border-box")
         color(Color("#000000"))
         letterSpacing(0.1.em)
@@ -109,8 +109,8 @@ object AppStyleSheet : StyleSheet() {
         display(DisplayStyle.Flex)
         justifyContent(JustifyContent.Center)
         alignItems(AlignItems.Center)
-        height(50.px)
-        width(300.px)
+        height(44.px)
+        width(240.px)
         background("#FFFFFF")
         border {
             width = 1.px

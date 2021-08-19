@@ -56,7 +56,7 @@ fun main() {
             Div(
                 attrs = {
                     style {
-                        marginTop(32.px)
+                        marginTop(120.px)
                     }
                 }
             ) {
