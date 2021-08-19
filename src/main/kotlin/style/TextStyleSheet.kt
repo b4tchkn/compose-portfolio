@@ -6,7 +6,7 @@ import org.jetbrains.compose.web.css.fontWeight
 import org.jetbrains.compose.web.css.px
 
 object TextStyleSheet : StyleSheet(AppStyleSheet) {
-    val large by style {
+    val textLarge by style {
         fontSize(32.px)
         fontWeight(800)
         property(
@@ -14,7 +14,7 @@ object TextStyleSheet : StyleSheet(AppStyleSheet) {
             "Lato, Noto Sans JP, system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif",
         )
     }
-    val medium by style {
+    val textMedium by style {
         fontSize(24.px)
         fontWeight(800)
         property(
@@ -22,7 +22,7 @@ object TextStyleSheet : StyleSheet(AppStyleSheet) {
             "Lato, Noto Sans JP, system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif",
         )
     }
-    val small by style {
+    val textSmall by style {
         fontSize(16.px)
         fontWeight(800)
         property(

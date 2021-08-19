@@ -27,12 +27,15 @@ import org.jetbrains.compose.web.dom.Img
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.renderComposable
 import style.AppStyleSheet
+import style.AppStyleSheet.bounceButton
+import style.AppStyleSheet.bounceButtonSpan
 import style.AppStyleSheet.footer
 import style.AppStyleSheet.icon
 import style.AppStyleSheet.socialIconButton
 import style.TextStyleSheet.caption
-import style.TextStyleSheet.large
-import style.TextStyleSheet.medium
+import style.TextStyleSheet.textLarge
+import style.TextStyleSheet.textMedium
+import style.TextStyleSheet.textSmall
 
 fun main() {
     renderComposable(rootElementId = "root") {
@@ -50,6 +53,14 @@ fun main() {
                 Divider(720.px)
             }
             ButtonsSection()
+            A(
+                attrs = {
+                    classes(bounceButton, bounceButtonSpan, textSmall)
+                },
+                href = "https://github.com/b4tchkn",
+            ) {
+                Text("Contact me")
+            }
         }
         Footer(attrs = { classes(footer, caption) }) {
             Text("© 2021 · Powered by Jetpack Compose")
@@ -102,14 +113,14 @@ private fun InfoSection() {
             display(DisplayStyle.Flex)
         }
     }) {
-        Div(attrs = { classes(large) }) {
+        Div(attrs = { classes(textLarge) }) {
             Text("Kakeru Nakabachi / batch")
         }
         Div(attrs = {
             style {
                 marginTop(16.px)
             }
-            classes(medium)
+            classes(textMedium)
         }) {
             Text("Mobile App Developer - Android, Flutter")
         }
