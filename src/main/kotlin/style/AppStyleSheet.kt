@@ -76,6 +76,8 @@ object AppStyleSheet : StyleSheet() {
         marginRight(8.px)
         marginLeft(8.px)
         padding(12.px)
+        height(64.px)
+        width(64.px)
         backgroundColor(Color("transparent"))
         display(DisplayStyle.LegacyInlineFlex)
 

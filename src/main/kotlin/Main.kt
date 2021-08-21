@@ -152,21 +152,34 @@ private fun ButtonsSection() {
             flexDirection(FlexDirection.Row)
         }
     }) {
-        SocialIconButton() // GitHub
-        SocialIconButton() // Twitter
-        SocialIconButton() // Facebook
-        SocialIconButton() // Qiita
-        SocialIconButton() // Speaker Deck
-        SocialIconButton() // Mail
+        socialLinks.forEach {
+            SocialIconButton(link = it)
+        }
     }
 }
 
 @Composable
-private fun SocialIconButton() {
+private fun SocialIconButton(link: SocialLink) {
     A(attrs = {
         classes(socialIconButton)
         target(ATarget.Blank)
-    }, href = "https://compose-web.ui.pages.jetbrains.team/") {
-        Img(src = "favicon-32x32.png") {}
+    }, href = link.url) {
+        Img(src = link.icon) {}
     }
 }
+
+
+private data class SocialLink(
+    val url: String,
+    val title: String,
+    val icon: String
+)
+
+
+private val socialLinks: List<SocialLink> = listOf(
+    SocialLink("https://github.com/b4tchkn", "GitHub", "icon.png"),
+    SocialLink("https://twitter.com/b4tchkn", "Twitter", "icon.png"),
+    SocialLink("https://www.facebook.com/kakeru.nakabachi", "Facebook", "icon.png"),
+    SocialLink("https://qiita.com/b4tchkn", "Qiita", "icon.png"),
+    SocialLink("https://speakerdeck.com/b4tchkn", "Speaker Deck", "icon.png"),
+)
