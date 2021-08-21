@@ -85,8 +85,8 @@ object AppStyleSheet : StyleSheet() {
 
         media(mediaMaxWidth(640.px)) {
             self style {
-                marginRight(8.px)
-                marginLeft(8.px)
+                marginRight(0.px)
+                marginLeft(0.px)
             }
         }
     }
