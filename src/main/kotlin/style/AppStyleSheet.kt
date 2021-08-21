@@ -1,6 +1,5 @@
 package style
 
-import org.jetbrains.compose.web.attributes.DirType
 import org.jetbrains.compose.web.css.AlignItems
 import org.jetbrains.compose.web.css.Color
 import org.jetbrains.compose.web.css.DisplayStyle
@@ -22,10 +21,8 @@ import org.jetbrains.compose.web.css.em
 import org.jetbrains.compose.web.css.flexDirection
 import org.jetbrains.compose.web.css.height
 import org.jetbrains.compose.web.css.justifyContent
-import org.jetbrains.compose.web.css.keywords.auto
 import org.jetbrains.compose.web.css.left
 import org.jetbrains.compose.web.css.letterSpacing
-import org.jetbrains.compose.web.css.margin
 import org.jetbrains.compose.web.css.marginLeft
 import org.jetbrains.compose.web.css.marginRight
 import org.jetbrains.compose.web.css.maxHeight
@@ -94,7 +91,7 @@ object AppStyleSheet : StyleSheet() {
         }
     }
 
-    val bounceButton by style {
+    val bouncedButton by style {
         display(DisplayStyle.Flex)
         justifyContent(JustifyContent.Center)
         alignItems(AlignItems.Center)
@@ -107,7 +104,7 @@ object AppStyleSheet : StyleSheet() {
         position(Position.Relative)
     }
 
-    val bounceButtonSpan by style {
+    val bouncedButtonSpan by style {
         display(DisplayStyle.Flex)
         justifyContent(JustifyContent.Center)
         alignItems(AlignItems.Center)
