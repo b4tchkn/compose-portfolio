@@ -78,7 +78,7 @@ private fun ContactmeButton() {
         href = "mailto:baaaakkrad@gmail.com",
     ) {
         Div(attrs = {
-            classes(textSmall)
+            classes(caption)
         }) {
             Text("Contact me")
         }
