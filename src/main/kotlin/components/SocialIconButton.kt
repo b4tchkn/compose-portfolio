@@ -13,7 +13,9 @@ fun SocialIconButton(link: SocialLink) {
         classes(AppStyleSheet.socialIconButton)
         target(ATarget.Blank)
     }, href = link.url) {
-        Img(src = link.icon) {}
+        Img(attrs = {
+            classes(AppStyleSheet.socialIcon)
+        }, src = link.icon)
     }
 }
 

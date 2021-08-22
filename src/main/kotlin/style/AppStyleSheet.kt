@@ -23,6 +23,7 @@ import org.jetbrains.compose.web.css.height
 import org.jetbrains.compose.web.css.justifyContent
 import org.jetbrains.compose.web.css.left
 import org.jetbrains.compose.web.css.letterSpacing
+import org.jetbrains.compose.web.css.marginBottom
 import org.jetbrains.compose.web.css.marginLeft
 import org.jetbrains.compose.web.css.marginRight
 import org.jetbrains.compose.web.css.maxHeight
@@ -67,12 +68,19 @@ object AppStyleSheet : StyleSheet() {
         maxWidth(120.px)
         maxHeight(120.px)
         borderRadius(50.pc)
+        marginLeft(32.px)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                marginLeft(0.px)
+                marginBottom(16.px)
+            }
+        }
     }
 
     val socialIconButton by style {
         marginRight(8.px)
         marginLeft(8.px)
-        padding(12.px)
         height(64.px)
         width(64.px)
         backgroundColor(Color("transparent"))
@@ -87,6 +95,22 @@ object AppStyleSheet : StyleSheet() {
             self style {
                 marginRight(0.px)
                 marginLeft(0.px)
+                height(48.px)
+                width(48.px)
+            }
+        }
+    }
+
+    val socialIcon by style {
+        padding(12.px)
+        width(64.px)
+        height(64.px)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                padding(8.px)
+                height(48.px)
+                width(48.px)
             }
         }
     }

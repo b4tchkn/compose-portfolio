@@ -23,9 +23,7 @@ fun BioSection() {
         classes(bioContainer)
     }) {
         InfoSection()
-        Div(attrs = { style { marginLeft(32.px) } }) {
-            Icon()
-        }
+        Icon()
     }
 }
 

@@ -3,12 +3,14 @@ package style
 import org.jetbrains.compose.web.css.AlignItems
 import org.jetbrains.compose.web.css.DisplayStyle
 import org.jetbrains.compose.web.css.FlexDirection
+import org.jetbrains.compose.web.css.JustifyContent
 import org.jetbrains.compose.web.css.StyleSheet
 import org.jetbrains.compose.web.css.alignItems
 import org.jetbrains.compose.web.css.display
 import org.jetbrains.compose.web.css.flexDirection
 import org.jetbrains.compose.web.css.fontSize
 import org.jetbrains.compose.web.css.fontWeight
+import org.jetbrains.compose.web.css.justifyContent
 import org.jetbrains.compose.web.css.media
 import org.jetbrains.compose.web.css.mediaMaxWidth
 import org.jetbrains.compose.web.css.px
@@ -18,6 +20,7 @@ object Container : StyleSheet(AppStyleSheet) {
         flexDirection(FlexDirection.Row)
         display(DisplayStyle.Flex)
         alignItems(AlignItems.Center)
+        justifyContent(JustifyContent.Center)
 
         media(mediaMaxWidth(640.px)) {
             self style {
