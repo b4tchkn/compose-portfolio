@@ -24,9 +24,9 @@ fun SocialInfoSection() {
 }
 
 private val socialLinks: List<SocialLink> = listOf(
-    SocialLink("https://github.com/b4tchkn", "GitHub", "icon.png"),
-    SocialLink("https://twitter.com/b4tchkn", "Twitter", "icon.png"),
-    SocialLink("https://www.facebook.com/kakeru.nakabachi", "Facebook", "icon.png"),
-    SocialLink("https://qiita.com/b4tchkn", "Qiita", "icon.png"),
-    SocialLink("https://speakerdeck.com/b4tchkn", "Speaker Deck", "icon.png"),
+    SocialLink("https://github.com/b4tchkn", "GitHub", "github.png"),
+    SocialLink("https://twitter.com/b4tchkn", "Twitter", "twitter.png"),
+    SocialLink("https://www.facebook.com/kakeru.nakabachi", "Facebook", "facebook.png"),
+    SocialLink("https://qiita.com/b4tchkn", "Qiita", "qiita.png"),
+    SocialLink("https://speakerdeck.com/b4tchkn", "Speaker Deck", "speakerdeck.png"),
 )
