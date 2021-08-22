@@ -15,13 +15,9 @@ import org.jetbrains.compose.web.css.px
 
 object Container : StyleSheet(AppStyleSheet) {
     val bioContainer by style {
-        media(mediaMaxWidth(1920.px)) {
-            self style {
-                flexDirection(FlexDirection.Row)
-                display(DisplayStyle.Flex)
-                alignItems(AlignItems.Center)
-            }
-        }
+        flexDirection(FlexDirection.Row)
+        display(DisplayStyle.Flex)
+        alignItems(AlignItems.Center)
 
         media(mediaMaxWidth(640.px)) {
             self style {
@@ -34,14 +30,9 @@ object Container : StyleSheet(AppStyleSheet) {
 
     val infoNameContainer by style {
         fontWeight(800)
-
-        media(mediaMaxWidth(1920.px)) {
-            self style {
-                alignItems(AlignItems.Center)
-                // Large
-                fontSize(32.px)
-            }
-        }
+        alignItems(AlignItems.Center)
+        // Large
+        fontSize(32.px)
 
         media(mediaMaxWidth(640.px)) {
             self style {
@@ -53,13 +44,9 @@ object Container : StyleSheet(AppStyleSheet) {
     }
 
     val infoDescriptionContainer by style {
-        media(mediaMaxWidth(1920.px)) {
-            self style {
-                alignItems(AlignItems.Center)
-                // Medium
-                fontSize(24.px)
-            }
-        }
+        alignItems(AlignItems.Center)
+        // Medium
+        fontSize(24.px)
 
         media(mediaMaxWidth(640.px)) {
             self style {
